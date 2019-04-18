@@ -1,0 +1,423 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Montserrat';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper{
+	margin:0 auto;
+	width: 100%;
+}
+.bodytext{
+	font-size: 14px;
+}
+a.ex:hover {
+	color: #00B9FF; TEXT-DECORATION: none; font-weight: none;
+}
+
+header{
+	width: 100%;
+	height: 50vh;
+	background: url(bluesalmon.png) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.content{
+	width: 90%;
+	margin: 2.5em auto;
+	font-size: justify;
+	align-content: center;
+}
+/* begin nav bar and media query*/
+.logo{
+	position: absolute;
+	display: inline-block;
+	float: left;
+	margin: 8.1px 25px;
+	width: 29%;
+	z-index: 1;
+}
+
+nav{
+	position: fixed;
+	width: 99%;
+	margin-top: 11px;
+	float: left;
+	z-index: 1;
+}
+nav ul{
+	list-style: none;
+	background: rgba(0,0,0,0);
+	overflow: hidden;
+	color: #fff;
+	opacity: 0.93;
+	padding: 0;
+	text-align: right;
+	margin: 0;
+	position: absolute;
+	width: 100%;
+	float: none;
+	display: inline-block;
+	transition: .5s;
+}
+nav.black ul{
+	background: #fff;
+	box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
+}
+nav ul li{
+	display: inline-block;
+	padding-top: 20px;
+  	padding-right: 29px;
+  	padding-bottom: 20px;
+  	padding-left: 0px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+
+}
+nav.black ul li a{
+	color: #676767;
+	transition: .5s;
+}
+
+li div {
+	left: 5%;
+	float: none;
+}
+nav.black.logo{
+	transition: .5s; 
+}
+
+.menu-icon{
+	width: 100%;
+	background: #000;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 15px 24px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+}
+@media(max-wdith: 580px){
+	.logo{
+		position: fixed;
+		top:0;
+		margin-top: 16px
+	}
+	nav ul{
+		max-height: 0px;
+		background: #000;
+	}
+	nav.black ul{
+		background: #000;
+	}
+	
+	.showing{
+		max-height: 20em;
+	}
+	nav ul li{
+		box-sizing: border-box;
+		width: 100%
+		padding: 24px 0;
+		text-align: center;
+	}
+	.menu-icon{
+		display: block;
+	}
+}
+/* end nav bar and media query*/
+
+/* begin body content flex*/
+@media screen and (max-width: 700px) {
+  .row{   
+    flex-direction: column;
+  }
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.left {
+  flex: 50%;
+  padding: 20px;
+}
+
+/* Main column */
+.right {
+  flex: 50%;
+  padding: 20px;
+}
+.bottom-marg{
+	margin-bottom: 15px; 
+}
+
+.info-group{
+	width: 100%;
+	box-sizing: border-box;
+    display: block;
+	margin-bottom: 20px;
+}
+.vid-wrapper{
+	padding-bottom: 56.25%; /*16:9*/
+	padding-top: 25px;
+	position: relative;
+	height: 0;
+}
+.vid-wrapper iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* end body content flex*/
+
+@media screen and (max-width: 924px) {
+  .socialmedia{   
+    order: 1;
+  }
+}
+
+.container-main{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	/*border: 3px solid blue;*/
+	align-content: stretch;
+}
+.container-main > .socialmedia{
+	flex: 33%;
+	/*border: 3px solid blue;*/
+	padding: 5px 5px 5px;
+	align-self: flex-end;
+	text-align:center;
+}
+.social-butt{
+	color: white;
+	padding: 0 12px 0;
+}
+.container-main > .price{
+	flex: 33%;
+	/*border: 3px solid blue;*/
+	padding: 5px 5px 5px;
+	align-self: center;
+	text-align:center;	
+}
+.container{
+	/*border: 3px solid blue;*/
+	padding: 20px 50px 5px;
+	max-width: 400px;
+	display: flex;
+	margin-top:130px;
+	align-self: flex-end;
+	flex: 33%;
+}
+.container > .pic{
+	width: 100px;
+	border-radius: 50%;
+	margin: 0 26px 0 0;
+	object-fit: contain;
+	align-self: flex-start;
+}
+.container > .info{
+	flex: 1 1 auto;
+	margin: auto;
+	object-fit: contain;
+	flex-shrink: 0;
+}
+.button-container{
+	margin: 4px 0 0 0;
+	object-fit: contain;
+	
+}
+
+.invite-butt{
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 4px;
+	color: white;
+	background-color: #00b9ff;
+	-webkit-box-shadow: 0 5px 30px 0px rgba(0,0,0,0.06);
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-family: Poppins;
+	text-transform: uppercase;
+	border-radius: 25px;
+}
+
+.invite-butt:hover {
+  background-color: #00ccff;
+}
+.social-butt:hover {
+  color: #00ccff;
+}
+.social-butt-yt:hover {
+  color: #FF0000;
+}
+.social-butt-sc:hover {
+  color: #FF4000;
+}
+/* begin text styles*/
+.txt1{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #000;
+	font-weight: bold;
+}
+
+.txt2{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+}
+.txt3{
+	color: #fff;
+	font-size: 18px;
+}
+.txt4{
+	color: #fff;
+	font-size: 11.75px;
+}
+
+/* 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	float: right;
+}
+li a {
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	top: 0%;
+	left: 0%;
+	min-width: 1000px;
+}
+.gradient {
+	background-image: linear-gradient(to right, blue, coral);
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 30%;
+	position: absolute;
+}
+.whitebar {
+	background-color: white;
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	top: 5%;
+}
+.description {
+	position: absolute;
+	height: 25%;
+	width: 100%;
+	top: 5%;
+	margin: auto;
+}
+.profile {
+	position: absolute;
+	top: 30%;
+	width: 50%;
+	height: 70%;
+	left: 0%;
+	text-align: center;
+}
+.type {
+	top: 40%;
+	position: absolute;
+	height: 10%;
+	width: 25%;
+	text-align: center;
+	left: 20%;
+	text-transform: capitalize;
+	color: white;
+	font-size: 2.5vh;
+	font-weight: bold;
+	text-align: left;
+}
+.logo {
+	position: absolute;
+	height: 100%;
+	width: 20%;
+}
+.name {
+	top: 48%;
+	position: absolute;
+	height: 12%;
+	width: 25%;
+	text-align: center;
+	left: 20%;
+	text-transform: capitalize;
+	color: white;
+	font-size: 3.5vw;
+	font-size: 3.5vh;
+	font-weight: bold;
+	text-align: left;
+}
+.location {
+	top: 70%;
+	position: absolute;
+	height: 12%;
+	width: 25%;
+	text-align: center;
+	left: 20%;
+	text-transform: capitalize;
+	color: white;
+	font-size: 2vh;
+	text-align: left;
+}
+.profilepicture {
+	border-radius: 50%;
+	height: 50%;
+	max-width: 140px;
+	position: absolute;
+	left: 2%;
+	top: 40%;
+	size: auto;
+}
+.price {
+	right: 15%;
+	bottom: 40%;
+	position: absolute;
+	color: white;
+	margin: auto;
+	text-align: center;
+	font-size: 150%;
+}
+.video {
+	position: absolute;
+	top: 35%;
+	margin: auto;
+	width: 100%;
+}
+.invite_button {
+	top: 75%;
+	position: absolute;
+	right: 15%;
+	font-size: 2vh;
+} */

@@ -1,0 +1,149 @@
+body {
+	height: 100%;
+	width: 100%;
+}
+h3 {
+	color: black;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	float: right;
+}
+li a {
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	top: 0%;
+	left: 0%;
+}
+.gradient {
+	background-image: linear-gradient(to right, blue, coral);
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 30%;
+	position: absolute;
+}
+.whitebar {
+	background-color: white;
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	top: 5%;
+}
+.description {
+	position: absolute;
+	height: 25%;
+	width: 100%;
+	top: 5%;
+	margin: auto;
+}
+.profile {
+	position: absolute;
+	top: 30%;
+	width: 100%;
+	height: 70%;
+	left: 0%;
+	text-align: center;
+}
+.type {
+	top: 40%;
+	position: absolute;
+	height: 10%;
+	width: 25%;
+	text-align: center;
+	left: 20%;
+	text-transform: capitalize;
+	color: white;
+	font-size: 2.5vh;
+	font-weight: bold;
+	text-align: left;
+}
+.logo {
+	position: absolute;
+	height: 100%;
+	width: 20%;
+}
+.eventPicture {
+	border-radius: 50%;
+	height: 50%;
+	max-width: 140px;
+	position: absolute;
+	left: 2%;
+	top: 40%;
+	size: auto;
+}
+.price {
+	display: flex;
+	color: white;
+	position: absolute;
+	font-size: 4vh;
+	right: 15%;
+	top: 23%;
+}
+.ename {
+	top: 55%;
+	position: absolute;
+	left: 20%;
+	text-transform: capitalize;
+	color: white;
+	font-size: 2vh;
+	font-weight: bold;
+}
+.vname {
+	top: 65%;
+	position: absolute;
+	left: 20%;
+	text-transform: capitalize;
+	color: white;
+	font-size: 2vh;
+	font-weight: bold;
+}
+.etime {
+	top: 50%;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 3vh;
+}
+.edit {
+	top: 75%;
+	position: absolute;
+	right: 25%;
+	width: 10%;
+	font-size: 2vh;
+}
+.delete {
+	top: 75%;
+	position: absolute;
+	right: 10%;
+	width: 10%;
+	font-size: 2vh;
+}
+.apply {
+	top: 75%;
+	position: absolute;
+	right: 15%;
+	font-size: 2vh;
+}
+.performer {
+	top: 40%;
+	width: 100%;
+	position: absolute;
+	color: white;
+	margin: auto;
+	text-align: center;
+}

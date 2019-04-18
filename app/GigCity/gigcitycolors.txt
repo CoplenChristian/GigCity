@@ -1,0 +1,3 @@
+blue #0000FF
+
+coral: #FF7F50
